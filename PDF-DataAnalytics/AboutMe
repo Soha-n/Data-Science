@@ -1,0 +1,21 @@
+🧠 PDF Report Classifier using ML (Naive Bayes, SVM, Logistic Regression)
+This project focuses on automatically extracting and classifying structured information from categorized PDF documents. It leverages traditional machine learning models—Naive Bayes, Support Vector Machine (SVM), and Logistic Regression—to predict the category of text content extracted from PDF files.
+
+The pipeline begins with parsing PDF pages, cleaning and extracting specific fields like report ID, date, category, and content. Once extracted, the text content is vectorized using a pre-trained TF-IDF vectorizer, and predictions are generated using the saved models. The final output includes the original information along with category predictions from all three models.
+
+This solution is especially useful for automated document classification tasks in domains such as compliance, reporting, and archival systems where consistency and scalability are crucial.
+
+
+
+📌 Features
+Extracts structured data from PDF using pdfplumber
+
+Cleans and parses data using custom regex
+
+Applies pre-trained models to predict categories
+
+Returns original and predicted categories in a single DataFrame
+
+Easily extensible for new models or pipelines
+
+
